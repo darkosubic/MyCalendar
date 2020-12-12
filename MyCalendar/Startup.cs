@@ -11,7 +11,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace MyCalendar
+namespace MyCalendar.Api
 {
     public class Startup
     {
