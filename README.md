@@ -1,6 +1,6 @@
 This project will be responsible for creating/maintaining API that will provide future Frontend(s) with calendar information such as day, month, year, day type (workday, weekend, holiday, day off, vacation, meeting, event), Users Full Name etc.
 
-As this project is still in planing mode important file so far is https://github.com/darkosubic/MyCalendar/blob/feature/MCL-1/MyCalendar_UML_Diagram.vsdx (Visio file with UML Diagrams)
+As this project is still in planing mode important file so far is https://github.com/darkosubic/MyCalendar/blob/master/MyCalendar_UML_Diagram.vsdx (Visio file with UML Diagrams)
 
 Each day will have either workday or weekend status, and both statuses can be changed by admin.
 Workdays can have multiple events:
@@ -14,6 +14,11 @@ Task
 Meeting
 Event
 Flex time
+
+
+All fields can be translated andd will be stored in dbo.Translation table.
+
+If DefaultName occures in table it means that its value will be used as fallback value if tanslation is not provided.
 
 Multiple events can occur at the same time and will be displayed next to each other.
 
