@@ -3,9 +3,14 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30711.63
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyCalendar.Api", "MyCalendar\MyCalendar.Api.csproj", "{938006B7-8B83-4844-B8DE-47D19FBD6B04}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyCalendar.Api", "MyCalendar\MyCalendar.Api.csproj", "{938006B7-8B83-4844-B8DE-47D19FBD6B04}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyCalendar.Data", "MyCalendar.Data\MyCalendar.Data.csproj", "{29E99A22-4D5A-49B6-9E80-F34F721075AD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyCalendar.Data", "MyCalendar.Data\MyCalendar.Data.csproj", "{29E99A22-4D5A-49B6-9E80-F34F721075AD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{6077448F-0B3C-4B1C-A77A-8C4772BC363E}"
+	ProjectSection(SolutionItems) = preProject
+		MyCalendar_UML_Diagram.vsdx = MyCalendar_UML_Diagram.vsdx
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
