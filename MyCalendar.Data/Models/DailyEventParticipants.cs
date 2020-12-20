@@ -2,13 +2,10 @@
 
 namespace MyCalendar.Data.Models
 {
-    public record DailyEventParticipants
+    public class DailyEventParticipants
     {
-        public DailyEventParticipants(Guid eventId, Guid userId)
-            => (EventId, UserId) = (eventId, userId);
-
-        public Guid EventId { get; }
+        public Guid EventId { get; set; }
         
-        public Guid UserId { get; }
+        public Guid UserId { get; set; }
     }
 }
