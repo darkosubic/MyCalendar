@@ -2,18 +2,12 @@
 
 namespace MyCalendar.Data.Models
 {
-    public record Translation
+    public class Translation
     {
-        public Translation(Guid id, 
-            Guid countryId, 
-            string name)
-            => (Id, CountryId, Name)
-            = (id, countryId, name);
+        Guid Id { get; set; }
 
-        Guid Id { get; }
+        Guid CountryId { get; set; }
 
-        Guid CountryId { get; }
-
-        string Name { get; }
+        string Name { get; set; }
     }
 }

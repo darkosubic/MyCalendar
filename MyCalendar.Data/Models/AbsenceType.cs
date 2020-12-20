@@ -2,15 +2,12 @@
 
 namespace MyCalendar.Data.Models
 {
-    public record AbsenceType
+    public class AbsenceType
     {
-        public AbsenceType(Guid id, string defaultName, bool isPaid)
-            => (Id, DefaultName, IsPaid) = (id, defaultName, isPaid);
+        public Guid Id { get; set; }
 
-        public Guid Id { get;  }
+        public string DefaultName { get; set; }
 
-        public string DefaultName { get; }
-
-        public bool IsPaid { get; }
+        public bool IsPaid { get; set; }
     }
 }

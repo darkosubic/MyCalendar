@@ -2,42 +2,26 @@
 
 namespace MyCalendar.Data.Models
 {
-    public record DailyEvent
+    public class DailyEvent
     {
-        public DailyEvent(
-            Guid id,
-            Guid dailyEventTypeId,
-            Guid userId,
-            Guid eventOrderId,
-            DateTime eventTime,
-            string? title,
-            string? description,
-            Guid locationId,
-            string? customLocation,
-            bool isCanceled
-            )
-            => (Id, DailyEventTypeId, UserId, EventOrderId, EventTime, Title, Description, LocationId, CustomLocation, IsCanceled)
-            = (id, dailyEventTypeId, userId, eventOrderId, eventTime, title, description, locationId, customLocation, isCanceled);
-        
+        public Guid Id { get; set; }
 
-        public Guid Id { get; }
+        public Guid DailyEventTypeId { get; set; }
 
-        public Guid DailyEventTypeId { get; }
+        public Guid UserId { get; set; }
 
-        public Guid UserId { get; }
+        public Guid EventOrderId { get; set; }
 
-        public Guid EventOrderId { get; }
+        public DateTime EventTime { get; set; }
 
-        public DateTime EventTime { get; }
+        public string? Title { get; set; }
 
-        public string? Title { get; }
+        public string? Description { get; set; }
 
-        public string? Description { get; }
+        public Guid? LocationId { get; set; }
 
-        public Guid? LocationId { get; }
+        public string? CustomLocation { get; set; }
 
-        public string? CustomLocation { get; }
-
-        public bool IsCanceled { get; }
+        public bool IsCanceled { get; set; }
     }
 }

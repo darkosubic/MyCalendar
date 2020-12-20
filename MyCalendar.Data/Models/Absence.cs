@@ -2,24 +2,16 @@
 
 namespace MyCalendar.Data.Models
 {
-    public record Absence
+    public class Absence
     {
-        public Absence(Guid id, 
-            DateTime dateFrom, 
-            DateTime dateTo, 
-            Guid absenceTypeId, 
-            string userId)
-            => (Id, DateFrom, DateTo, AbsenceTypeId, UserId)
-            = (id, dateFrom, dateTo, absenceTypeId, userId);
+        public Guid Id { get; set; }
 
-        public Guid Id { get; }
+        public DateTime DateFrom { get; set; }
 
-        public DateTime DateFrom { get; }
+        public DateTime? DateTo { get; set; }
 
-        public DateTime? DateTo { get; }
+        public Guid AbsenceTypeId { get; set; }
 
-        public Guid AbsenceTypeId { get; }
-
-        public string UserId { get; }
+        public string UserId { get; set; }
     }
 }
